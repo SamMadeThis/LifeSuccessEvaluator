@@ -249,9 +249,9 @@ class LifeSuccessEvaluator:
             "Helping Others",  # Category label
             "Do you regularly help or support others in some way?" )
     
-    # This is the SUCCESS CRITERION function from your image!
+    # This is the SUCCESS CRITERION function 
     def Success(self):
-        """Determine if the criteria for success have been met"""
+        """Determines if the criteria for success have been met"""
         
         # Calculate the percentage: (points earned ÷ total possible points) × 100
         percentage = (self.score / self.max_score) * 100
@@ -281,18 +281,16 @@ class LifeSuccessEvaluator:
         
         # Print a congratulatory message in green colour
         self.print_styled("\nYou're living a successful life!", 'green', 0.02)
-        # Print encouragement about strong foundations
         print("""\nYou've cultivated strong foundations across multiple\ndimensions of wellbeing. 
-              Keep nurturing these areas\nand continue to grow!""")
+        Keep nurturing these areas\nand continue to grow!""")
         
-        # Print a separator line
         print("\n" + line_seperator)
         # Print motivational bullet points
         motivation_message="""
         \n💪 Keep being awesome!
         \n🌟 Continue pursuing your goals!
         \n❤️ Cherish your relationships!
-        \n🎯 Live with purpose!"""
+        \n🎯 Live with purpose!\n"""
 
         print(motivation_message)
         
@@ -352,7 +350,6 @@ class LifeSuccessEvaluator:
         print("\n" + line_seperator)
         # Print section title with magenta colour and slower typewriter effect
         self.print_styled("✨ REMEMBER ✨", 'magenta', 0.05)
-        # Print another line of equals signs to close the header
         print(line_seperator)
         
         # Print motivational bullet points about growth and self-improvement
@@ -361,10 +358,8 @@ class LifeSuccessEvaluator:
         \n💪 Small steps lead to big changes
         \n🎯 Your worth isn't defined by a score
         \n❤️  You have the power to improve your life
-        \n🌟 Every day is a new opportunity """
-        print(final_message)
-
-        print("\n" + line_seperator)
+        \n🌟 Every day is a new opportunity\n"""
+        print(final_message+ line_seperator)
         # Print final encouraging message with green colour
         self.print_styled("\n🚀 You've got this! Keep going!", 'green', 0.03)
         print(line_seperator + "\n")
