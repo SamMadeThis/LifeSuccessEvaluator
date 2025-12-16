@@ -94,31 +94,27 @@ class LifeSuccessEvaluator:
     
     # Method to evaluate health and physical wellbeing
     def evaluate_health(self):
-        # Docstring explaining this section
+
         """Health & Physical Wellbeing"""
-        # Print a line of 60 equals signs as a header separator
+        
         print("\n" + line_seperator)
         # Print the section title with cyan color and typewriter effect
         self.print_styled("💪 HEALTH & PHYSICAL WELLBEING", 'cyan', 0.02)
-        # Print another line of equals signs to close the header
         print(line_seperator)
         
-        # Ask question about physical health and energy
+        # Ask a question about physical health and energy
         self.ask_question(
             "Physical Health",  # Category label
-            "Do you feel physically healthy and energetic most days?"  # The question
-        )
-        # Ask question about mental health
+            "Do you feel physically healthy and energetic most days?" )
+        # Ask a question about mental health
         self.ask_question(
             "Mental Health",  # Category label
-            "Are you generally free from chronic stress or anxiety?"  # The question
-        )
-        # Ask question about self-care habits
+            "Are you generally free from chronic stress or anxiety?" )
+        # Ask a question about self-care habits
         self.ask_question(
             "Self-Care",  # Category label
-            "Do you take time to care for your physical and mental health?"  # The question
-        )
-        # Ask question about sleep quality
+            "Do you take time to care for your physical and mental health?")
+        # Ask a question about sleep quality
         self.ask_question(
             "Sleep",  # Category label
             "Do you get enough quality sleep regularly?"  # The question
@@ -126,160 +122,137 @@ class LifeSuccessEvaluator:
     
     # Method to evaluate relationships and social connections
     def evaluate_relationships(self):
-        # Docstring explaining this section
+    
         """Relationships & Social Connection"""
-        # Print a line of 60 equals signs as a header separator
+        
         print("\n" + line_seperator)
         # Print the section title with magenta color and typewriter effect
         self.print_styled("❤️  RELATIONSHIPS & CONNECTION", 'magenta', 0.02)
-        # Print another line of equals signs to close the header
         print(line_seperator)
         
-        # Ask question about meaningful relationships
+        # Ask a question about meaningful relationships
         self.ask_question(
             "Close Relationships",  # Category label
-            "Do you have meaningful relationships with people who care about you?"  # The question
-        )
-        # Ask question about social support during difficult times
+            "Do you have meaningful relationships with people who care about you?" )
+        # Ask a question about social support during difficult times
         self.ask_question(
             "Social Support",  # Category label
-            "Do you feel supported when going through difficult times?"  # The question
-        )
-        # Ask question about regular connection with others
+            "Do you feel supported when going through difficult times?" )
+        # Ask a question about a regular connection with others'
         self.ask_question(
             "Connection",  # Category label
-            "Do you regularly connect with friends or loved ones?"  # The question
-        )
-        # Ask question about communication effectiveness
+            "Do you regularly connect with friends or loved ones?" )
+        # Ask a question about communication effectiveness
         self.ask_question(
             "Communication",  # Category label
-            "Can you express your feelings and needs to others effectively?"  # The question
-        )
+            "Can you express your feelings and needs to others effectively?"  )
     
     # Method to evaluate purpose and personal growth
     def evaluate_purpose(self):
-        # Docstring explaining this section
         """Purpose & Personal Growth"""
-        # Print a line of 60 equals signs as a header separator
+        
         print("\n" + line_seperator)
-        # Print the section title with yellow color and typewriter effect
+        # Print the section title with yellow colour and typewriter effect
         self.print_styled("🎯 PURPOSE & PERSONAL GROWTH", 'yellow', 0.02)
-        # Print another line of equals signs to close the header
         print(line_seperator)
         
-        # Ask question about life meaning and purpose with higher weight (2 points)
+        # Ask a question about life's meaning and purpose with a higher weight (2 points)
         self.ask_question(
             "Life Purpose",  # Category label
-            "Do you feel your life has meaning and purpose?",  # The question
-            weight=2  # This question is worth 2 points instead of 1 - it's more important
+            "Do you feel your life has meaning and purpose?",  
+            weight=2  # This question is worth 2 points instead of 1
         )
-        # Ask question about working toward goals
+        # Ask a question about working toward goals
         self.ask_question(
             "Goals",  # Category label
-            "Are you working towards goals that matter to you?"  # The question
-        )
-        # Ask question about personal learning and growth
+            "Are you working towards goals that matter to you?"  )
+        # Ask a question about personal learning and growth
         self.ask_question(
             "Learning",  # Category label
             "Do you actively seek to learn and grow as a person?"  # The question
         )
-        # Ask question about living by personal values
+        # Ask a question about living by personal values
         self.ask_question(
             "Values",  # Category label
-            "Are you living in alignment with your core values?"  # The question
-        )
+            "Are you living in alignment with your core values?" )
     
     # Method to evaluate financial wellbeing and stability
     def evaluate_financial(self):
-        # Docstring explaining this section
         """Financial Stability"""
-        # Print a line of 60 equals signs as a header separator
+        
         print("\n" + line_seperator)
-        # Print the section title with green color and typewriter effect
+        # Print the section title with green colour and typewriter effect
         self.print_styled("💰 FINANCIAL WELLBEING", 'green', 0.02)
-        # Print another line of equals signs to close the header
         print(line_seperator)
         
-        # Ask question about affording basic needs
+        # Ask a question about affording basic needs
         self.ask_question(
             "Basic Needs",  # Category label
-            "Can you comfortably afford your basic needs (food, shelter, healthcare)?"  # The question
-        )
-        # Ask question about financial stress levels
+            "Can you comfortably afford your basic needs (food, shelter, healthcare)?" )
+        # Ask a question about financial stress levels
         self.ask_question(
             "Financial Stress",  # Category label
-            "Are you generally free from constant financial worry?"  # The question
-        )
-        # Ask question about ability to save and plan ahead
+            "Are you generally free from constant financial worry?" )
+        # Ask a question about the ability to save and plan ahead
         self.ask_question(
             "Future Planning",  # Category label
             "Are you able to save or plan for your future?"  # The question
         )
     
-    # Method to evaluate happiness and fulfillment
+    # Method to evaluate happiness and fulfilment
     def evaluate_happiness(self):
-        # Docstring explaining this section
         """Happiness & Fulfillment"""
-        # Print a line of 60 equals signs as a header separator
-        print("\n" + "="*60)
-        # Print the section title with cyan color and typewriter effect
+        
+        print("\n" + line_seperator)
+        # Print the section title with cyan colour and typewriter effect
         self.print_styled("😊 HAPPINESS & FULFILLMENT", 'cyan', 0.02)
-        # Print another line of equals signs to close the header
         print(line_seperator)
         
-        # Ask question about experiencing joy with higher weight (2 points)
+        # Ask a question about experiencing joy with a higher weight (2 points)
         self.ask_question(
             "Daily Joy",  # Category label
-            "Do you experience moments of joy or contentment regularly?",  # The question
+            "Do you experience moments of joy or contentment regularly?", 
             weight=2  # This question is worth 2 points - happiness is a key indicator
         )
-        # Ask question about gratitude
+        # Ask a question about gratitude
         self.ask_question(
             "Gratitude",  # Category label
-            "Do you feel grateful for aspects of your life?"  # The question
-        )
-        # Ask question about being present and mindful
+            "Do you feel grateful for aspects of your life?")
+        # Ask a question about being present and mindful
         self.ask_question(
             "Present Moment",  # Category label
-            "Can you enjoy the present moment without constant worry?"  # The question
-        )
-        # Ask question about optimism and hope
+            "Can you enjoy the present moment without constant worry?")
+        # Ask a question about optimism and hope
         self.ask_question(
             "Optimism",  # Category label
-            "Do you generally feel hopeful about your future?"  # The question
-        )
+            "Do you generally feel hopeful about your future?")
     
     # Method to evaluate contribution and impact on others
     def evaluate_contribution(self):
-        # Docstring explaining this section
         """Contribution & Impact"""
-        # Print a line of 60 equals signs as a header separator
+    
         print("\n" + line_seperator)
-        # Print the section title with magenta color and typewriter effect
+        # Print the section title with magenta colour and typewriter effect
         self.print_styled("🌟 CONTRIBUTION & IMPACT", 'magenta', 0.02)
-        # Print another line of equals signs to close the header
         print(line_seperator)
         
-        # Ask question about making a positive impact
+        # Ask a question about making a positive impact
         self.ask_question(
             "Positive Impact",  # Category label
-            "Do you feel you make a positive difference in others' lives?"  # The question
-        )
-        # Ask question about community involvement
+            "Do you feel you make a positive difference in others' lives?" )
+        # Ask a question about community involvement
         self.ask_question(
             "Community",  # Category label
-            "Are you part of a community or cause you care about?"  # The question
-        )
-        # Ask question about helping others
+            "Are you part of a community or cause you care about?")
+        # Ask a question about helping others
         self.ask_question(
             "Helping Others",  # Category label
-            "Do you regularly help or support others in some way?"  # The question
-        )
+            "Do you regularly help or support others in some way?" )
     
-    # This is the SUCCESS CRITERIA function from your image!
+    # This is the SUCCESS CRITERION function from your image!
     def Success(self):
-        # Docstring explaining what this method determines
         """Determine if the criteria for success have been met"""
+        
         # Calculate the percentage: (points earned ÷ total possible points) × 100
         percentage = (self.score / self.max_score) * 100
         
@@ -289,10 +262,9 @@ class LifeSuccessEvaluator:
     
     # This is the celebrate() function from your image - runs when Success() is True
     def celebrate(self):
-        # Docstring explaining this is for successful outcomes
         """Celebration for success, only displays if 
         they have scored 70 and above"""
-        
+                
         # Clear the terminal screen for a fresh display
         self.clear_screen()
         
@@ -307,7 +279,7 @@ class LifeSuccessEvaluator:
         print(f"\n✨ You scored: {self.score}/{self.max_score} ({percentage:.1f}%)")
         print("\n" + line_seperator)
         
-        # Print congratulatory message with green color
+        # Print a congratulatory message in green colour
         self.print_styled("\nYou're living a successful life!", 'green', 0.02)
         # Print encouragement about strong foundations
         print("""\nYou've cultivated strong foundations across multiple\ndimensions of wellbeing. 
@@ -331,7 +303,7 @@ class LifeSuccessEvaluator:
 
         self.clear_screen()
         print("\n" + line_seperator)
-        # Print section title with yellow color and slower typewriter effect
+        # Print section title with yellow colour and slower typewriter effect
         self.print_styled("📈 ROOM FOR GROWTH", 'yellow', 0.05)
         print(line_seperator)
         
@@ -342,14 +314,15 @@ class LifeSuccessEvaluator:
         print(f"\n✨ You scored: {self.score}/{self.max_score} ({percentage:.1f}%)")
         print("\n" + line_seperator)
         
-        # Print encouraging message with cyan color
+        # Print an encouraging message with cyan colour
         self.print_styled("\nEvery journey has its challenges.", 'cyan', 0.02)
+        
         # Message to explain that success is about progress, not perfection
         encouraging_message = "\nSuccess isn't about being perfect—it's about progress.\nLet's identify areas where you can grow..."
         print(encouraging_message)
         
         # Show areas needing attention to help the user identify areas for improvement opportunities
-        print("\n" + line_seperator + "\n💡 AREAS TO FOCUS ON:" + line_seperator)
+        print("\n" + line_seperator + "\n💡 AREAS TO FOCUS ON:\n" + line_seperator)
         
         # Creates an empty list to store questions that were answered "no"
         improvement_areas = []
@@ -377,7 +350,7 @@ class LifeSuccessEvaluator:
         """Motivational closing"""
 
         print("\n" + line_seperator)
-        # Print section title with magenta color and slower typewriter effect
+        # Print section title with magenta colour and slower typewriter effect
         self.print_styled("✨ REMEMBER ✨", 'magenta', 0.05)
         # Print another line of equals signs to close the header
         print(line_seperator)
@@ -391,12 +364,9 @@ class LifeSuccessEvaluator:
         \n🌟 Every day is a new opportunity """
         print(final_message)
 
-        
-        # Print a separator line
         print("\n" + line_seperator)
-        # Print final encouraging message with green color
+        # Print final encouraging message with green colour
         self.print_styled("\n🚀 You've got this! Keep going!", 'green', 0.03)
-        # Print final separator line
         print(line_seperator + "\n")
     
     # ===================================================================
@@ -405,20 +375,21 @@ class LifeSuccessEvaluator:
 
     def run(self):
         """Main program flow """
+        
         # Clear the terminal screen for a fresh start
         self.clear_screen()
         
         # Title Screen section
         print("\n" + line_seperator)
-        # Print the program title with cyan color and slower typewriter effect
+        # Print the program title with cyan colour and a  slower typewriter effect
         self.print_styled("LIFE SUCCESS EVALUATOR", 'cyan', 0.05)
         print(line_seperator)
 
         # Print instructions for the user
         instructions = """\nAnswer honestly to evaluate your success across
-        \nthe key dimensions of a fulfilling life."""
+        \nthe key dimensions of a fulfilling life.\n"""
  
-        print(instructions+"\n" + line_seperator)
+        print(instructions + line_seperator)
         
         # Wait for user to press ENTER before starting - pauses execution
         input("\nPress ENTER to begin...")
